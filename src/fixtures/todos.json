@@ -1,0 +1,9 @@
+{
+    "todos":[
+        "Eat",
+        "Sleep",
+        "Repeat"
+    ],
+    "toComplete":"Eat",
+    "toDelete":"Repeat"
+}
