@@ -43,7 +43,7 @@ export class TodoPage{
 
     TodoLocator(todo: string): Locator{
 
-        return this.todoList.getByText(todo,{exact:true});
+        return this.todoList.getByTestId('todo-title').filter({hasText:new RegExp(`^${todo}$`),visible:true});
 
     }
     
