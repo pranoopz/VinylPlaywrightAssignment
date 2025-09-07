@@ -19,7 +19,7 @@ test("Add 3 todos and verify they are displayed",async({page,testdata})=>{
     await todoPage.AddTodos(testdata.todos)
 
     for(const todo of testdata.todos){
-        todoPage.assertTodoVisible("")
+        todoPage.assertTodoVisible(todo)
     }
     
 })
