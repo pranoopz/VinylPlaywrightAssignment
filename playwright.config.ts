@@ -10,6 +10,8 @@ export default defineConfig({
   reporter: [['html', { outputFolder: 'results/playwright-report', open: 'never' }]],
   use: {
     baseURL: 'https://demo.playwright.dev/todomvc',
+    actionTimeout: 15000,
+    navigationTimeout: 20000,
     headless: process.env.CI ? true : false,
     launchOptions: {
       slowMo: 500,
